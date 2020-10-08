@@ -2,23 +2,37 @@ import { useQuery } from "@apollo/react-hooks";
 import { Grid, Typography } from "@material-ui/core";
 import { getEpisodes } from '../../lib/apollo/queries';
 import EpisodeCard from "./EpisodeCard";
-import Spinner from "../Spinner";
 import PageBar from '../PageBar';
 import GridContainer from "../GridContainer";
+import SkeletonEpisodeCards from "./SkeletonEpisodeCards";
+
+import './style.scss';
 
 const EpisodeGrid = ({page}) => {
     const { loading, error, data } = useQuery(getEpisodes({page}));
 
-    if (loading) return <Spinner><p className="spinnerText">Fetching Episodes...</p></Spinner>
+    if (loading) return (
+        <div id="episodes__loading">
+            <PageBar
+                countLabel={'episodes found'}
+            />
+            <GridContainer>
+                <SkeletonEpisodeCards />
+            </GridContainer>
+        </div>
+    );
+
     if (error) return <Typography variant="h4" className="errorHeader">Episodes not found!</Typography>;
 
     const { info, results } = data.episodes;
 
     return (
-        <div id="episodes">
+        <div id="episodes__loaded">
             <PageBar 
-                pageCount={info.pages}
+                currentPage={parseInt(page)}
+                totalPages={info.pages}
                 itemCount={info.count}
+                itemsShown={results.length}
                 previousPage={info.prev}
                 nextPage={info.next}
                 countLabel={'episodes found'}

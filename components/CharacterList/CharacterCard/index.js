@@ -99,10 +99,10 @@ const CharacterCard = ({id, name, gender, species, status, location, image, show
         <Card raised className={classes.root}>
             <Link href={`/character/[id]`} as={`/character/${id}`}>
                 <CardMedia
-                className={classes.media}
-                image={image}
-                title={name}
-                style={{cursor: 'pointer'}}
+                    className={classes.media}
+                    image={image}
+                    title={name}
+                    style={{cursor: 'pointer'}}
                 />
             </Link>
             <CardContent>

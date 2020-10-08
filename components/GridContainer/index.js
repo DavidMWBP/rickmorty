@@ -2,6 +2,7 @@ import { Grid } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
 const GridContainer = ({container, direction, justify, alignContent, alignItems, spacing, children}) => {
+    
     return (
         <Grid  
             container={container}

@@ -3,8 +3,6 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
-import './style.scss';
-
 const LocationCard = ({id, name, episode, air_date}) => {
     return (
         <Link href={`/episode/[id]`} as={`/episode/${id}`}>
