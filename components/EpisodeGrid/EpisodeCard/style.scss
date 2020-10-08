@@ -1,0 +1,16 @@
+.episodeCard {
+    height: 100%;
+    min-width: 300px;
+    max-width: 300px;
+    text-transform: capitalize;
+
+    cursor: pointer;
+
+    :hover {
+        opacity: 0.8;
+    }
+
+    .MuiTypography-root:hover {
+        opacity: unset;
+    }
+}

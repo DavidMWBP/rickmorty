@@ -1,0 +1,17 @@
+#pageBar {
+    #pageBar__headerCount {
+        align-self: center;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+
+    #pageBar__controls {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-flow: row;
+        margin-bottom: 30px;
+        color: #000;
+        width: 100%;
+    }
+}

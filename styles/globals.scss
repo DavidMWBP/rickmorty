@@ -1,0 +1,29 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(255, 255, 255 ,0.8);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.errorHeader {
+  color: #000000;
+  text-align: center;
+}
+
+.spinnerText {
+  color: #000000;
+}
