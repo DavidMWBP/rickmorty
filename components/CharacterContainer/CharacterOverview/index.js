@@ -11,12 +11,6 @@ import './style.scss';
 import DimensionLink from '../../DimensionLink';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    width: 400,
-  },
-  media: {
-    height: 500
-  },
   heading: {
     fontSize: theme.typography.pxToRem(15),
     flexBasis: '33.33%',
@@ -38,9 +32,9 @@ const CharacterOverview = ({ name, status, gender, species, location, origin, ep
     };
   
     return (
-      <div className={classes.root} style={{margin: 'auto'}}>
+      <div className="characterAccordion__container">
         <CardMedia
-        className={classes.media}
+        style={{height: 500}}
         image={image}
         title={name}
         />

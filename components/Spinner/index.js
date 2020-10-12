@@ -1,26 +1,14 @@
 import { CircularProgress } from '@material-ui/core';
 
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles({
-    container: {
-        textAlign: 'center',
-    },
-    spinner: {
-        color: '#000000'
-    }
-});
+import './style.scss';
 
 const Spinner = ({children}) => {
-    const classes = useStyles();
-
     return (
-        <div className={classes.container}>
-            <CircularProgress className={classes.spinner} />
+        <div className="spinner__container">
+            <CircularProgress className="spinner__circle" />
             {children}
         </div>
     )
-
 };
 
 export default Spinner;
