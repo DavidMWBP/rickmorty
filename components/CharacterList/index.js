@@ -1,6 +1,6 @@
 import { useQuery } from "@apollo/client";
 import { getCharacters } from '../../lib/apollo/queries';
-import { Grid } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 
 import CharacterCard from './CharacterCard';
 import PageBar from "../PageBar";

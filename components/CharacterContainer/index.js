@@ -1,4 +1,5 @@
 import { useQuery } from "@apollo/react-hooks";
+import { Typography } from "@material-ui/core";
 import { getCharacter } from '../../lib/apollo/queries';
 
 import Spinner from "../Spinner";
