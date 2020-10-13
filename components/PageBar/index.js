@@ -1,8 +1,6 @@
+import { Button, Container, Typography } from '@material-ui/core';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Button, Container, Typography } from '@material-ui/core';
-
-import './style.scss';
 
 const PageBar = ({previousPage, nextPage, currentPage, totalPages, itemCount, countLabel, collectionUrl, itemsShown}) => {
 

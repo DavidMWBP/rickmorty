@@ -6,8 +6,6 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Button, CardMedia, Grid } from '@material-ui/core';
-
-import './style.scss';
 import DimensionLink from '../../DimensionLink';
 
 const useStyles = makeStyles((theme) => ({

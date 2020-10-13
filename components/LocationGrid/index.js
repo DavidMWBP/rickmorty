@@ -6,8 +6,6 @@ import PageBar from '../PageBar';
 import GridContainer from "../GridContainer";
 import SkeletonLocationCards from './SkeletonLocationCards';
 
-import './style.scss';
-
 const LocationGrid = ({page}) => {
     const { loading, error, data } = useQuery(getLocations({page}));
 

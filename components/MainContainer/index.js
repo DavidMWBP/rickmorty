@@ -1,5 +1,4 @@
 import { Container } from '@material-ui/core';
-import './style.scss';
 
 const MainContainer = ({children}) => {
     return (

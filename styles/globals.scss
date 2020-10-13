@@ -31,3 +31,14 @@ a:hover {
 .spinnerText {
   color: #000000;
 }
+
+@import '../components/BackToTopButton/style.scss';
+@import '../components/CharacterContainer/CharacterOverview/style.scss';
+@import '../components/DimensionList/style.scss';
+@import '../components/EpisodeGrid/style.scss';
+@import '../components/EpisodeList/style.scss';
+@import '../components/LocationGrid/style.scss';
+@import '../components/LocationList/style.scss';
+@import '../components/MainContainer/style.scss';
+@import '../components/PageBar/style.scss';
+@import '../components/Spinner/style.scss';

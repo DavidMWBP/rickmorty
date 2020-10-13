@@ -6,8 +6,6 @@ import PageBar from '../PageBar';
 import GridContainer from "../GridContainer";
 import SkeletonEpisodeCards from "./SkeletonEpisodeCards";
 
-import './style.scss';
-
 const EpisodeGrid = ({page}) => {
     const { loading, error, data } = useQuery(getEpisodes({page}));
 

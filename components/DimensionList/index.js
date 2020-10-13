@@ -3,9 +3,7 @@ import { Grid, Typography } from "@material-ui/core";
 import { getResidentsOfDimension } from '../../lib/apollo/queries';
 import CharacterCard from "../CharacterList/CharacterCard";
 import GridContainer from "../GridContainer";
-
 import Spinner from "../Spinner";
-import './style.scss';
 
 const DimensionList = ({id}) => {
     const { loading, error, data } = useQuery(getResidentsOfDimension({id}));

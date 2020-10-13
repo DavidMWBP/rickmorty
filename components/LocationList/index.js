@@ -3,9 +3,7 @@ import { Grid, Typography } from "@material-ui/core";
 import { getLocation } from '../../lib/apollo/queries';
 import CharacterCard from "../CharacterList/CharacterCard";
 import GridContainer from "../GridContainer";
-
 import Spinner from "../Spinner";
-import './style.scss';
 
 const LocationList = ({id}) => {
     const { loading, error, data } = useQuery(getLocation({id}));

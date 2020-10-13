@@ -3,9 +3,7 @@ import { Grid, Typography } from "@material-ui/core";
 import { getEpisode } from '../../lib/apollo/queries';
 import CharacterCard from "../CharacterList/CharacterCard";
 import GridContainer from "../GridContainer";
-
 import Spinner from "../Spinner";
-import './style.scss';
 
 const EpisodeList = ({id}) => {
     const { loading, error, data } = useQuery(getEpisode({id}));
